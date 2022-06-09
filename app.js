@@ -7,7 +7,7 @@ const https = require("https");
 
 const app = express();
 
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({extended: true}))  //url encoded request
 app.use(express.static("public"));   //we will keep all our files in static folder i.e. css, images etc
 // remember to change the link ref in signup.html
 app.get("/", function(req, res) {
